@@ -1,0 +1,16 @@
+[package]
+name = "chessboard_tiling_pictures"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+xdd = {path = "../xdd"}
+lattice-picture = {path = "../lattice-picture"}
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "chessboard_coverings"
+harness = false
+
