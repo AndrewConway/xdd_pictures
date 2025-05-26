@@ -11,6 +11,9 @@ lattice-picture = {path = "../lattice-picture"}
 criterion = { version = "0.5", features = ["html_reports"] }
 
 [[bench]]
-name = "chessboard_coverings"
+# I can't work out how to get it to do both, so enable one at at time.
+# If someone knowms, please tell me.
+# name = "chessboard_coverings"
+name = "directed_animals"
 harness = false
 
