@@ -44,7 +44,7 @@ pub fn count_directed_animals_by_memoization(length:u32) -> (usize,Vec<u64>) {
 
 
 
-fn variable_number(x:u16,y:u16) -> VariableIndex {
+pub fn variable_number(x:u16,y:u16) -> VariableIndex {
     let d = x+y;
     VariableIndex(x+(d*(d+1))/2)
 }
