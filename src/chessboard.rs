@@ -1,3 +1,5 @@
+/// Copyright 2022-2025 Andrew Conway. All rights reserved. See README.md for licensing. 
+
 use crate::tiling_problem::TilingProblem;
 
 /// Define a tiling problem as a chessboard with dominoes.

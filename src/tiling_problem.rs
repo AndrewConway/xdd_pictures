@@ -1,3 +1,5 @@
+/// Copyright 2022-2025 Andrew Conway. All rights reserved. See README.md for licensing. 
+
 use std::collections::HashMap;
 use std::hash::Hash;
 use xdd::{DecisionDiagramFactory, NoMultiplicity, NodeIndex, VariableIndex};

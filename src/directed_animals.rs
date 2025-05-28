@@ -10,6 +10,8 @@
 //! That is, the function we need to compute is the intersection (logical and) of
 //! one term for each site other than the origin being (x-1,y) | (x,y-1) | !(x,y)
 
+/// Copyright 2022-2025 Andrew Conway. All rights reserved. See README.md for licensing. 
+
 
 use std::collections::HashMap;
 use xdd::{DecisionDiagramFactory, NodeIndex, NoMultiplicity, VariableIndex};
