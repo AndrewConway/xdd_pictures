@@ -12,16 +12,16 @@ This project relies on two other packages which need to be cloned in the
 same way as this git repository.
 
 ```bash
-git clone https://github.com/AndrewConway/chessboard_tiling_pictures.git
+git clone https://github.com/AndrewConway/xdd_pictures.git
 git clone https://github.com/AndrewConway/xdd.git
 git clone https://github.com/AndrewConway/lattice-picture.git
-cd chessboard_tiling_pictures
+cd xdd_pictures
 cargo build --release
 ```
 
 # Running
 
-The following instructions assume you are in the `chessboard_tiling_pictures` directory
+The following instructions assume you are in the `xdd_pictures` directory
 created above.
 
 To make pictures, run
