@@ -1,5 +1,5 @@
 use xdd::{BDDFactory, DecisionDiagramFactory, NoMultiplicity, ZDDFactory};
-use chessboard_tiling_pictures::directed_animals::{count_directed_animals_by_memoization, count_directed_animals_xdd};
+use xdd_pictures::directed_animals::{count_directed_animals_by_memoization, count_directed_animals_xdd};
 
 #[test]
 fn test_memoization() {

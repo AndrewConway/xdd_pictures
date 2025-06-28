@@ -2,8 +2,8 @@ use std::fmt::Display;
 use std::mem;
 use xdd::{BDDFactory, DecisionDiagramFactory, NoMultiplicity, ZDDFactory};
 use xdd::generating_function::GeneratingFunctionWithMultiplicity;
-use chessboard_tiling_pictures::chessboard::{setup_chessboard_tiled_with_dominoes, setup_chessboard_tiled_with_up_to_trionimoes};
-use chessboard_tiling_pictures::tiling_problem::TilingProblem;
+use xdd_pictures::chessboard::{setup_chessboard_tiled_with_dominoes, setup_chessboard_tiled_with_up_to_trionimoes};
+use xdd_pictures::tiling_problem::TilingProblem;
 
 /// Count using a decision diagram, given a creator function for the factory taking the number of variables.
 fn count_tiling<F: DecisionDiagramFactory<u32, NoMultiplicity>,G:GeneratingFunctionWithMultiplicity<NoMultiplicity>+Display>(problem:TilingProblem<[i32;2]>) -> G {

@@ -3,9 +3,9 @@ use lattice_picture::item::LatticeItem;
 use lattice_picture::picture::LatticePicture;
 use lattice_picture::svg::{SizedSVG};
 use xdd::{BDDFactory, DecisionDiagramFactory, NoMultiplicity, VariableIndex};
-use chessboard_tiling_pictures::chessboard::{setup_chessboard_tiled_with_dominoes, setup_chessboard_tiled_with_up_to_trionimoes};
-use chessboard_tiling_pictures::directed_animals::{count_directed_animals_xdd, variable_number};
-use chessboard_tiling_pictures::tiling_problem::{SiteIndex, TilingProblem};
+use xdd_pictures::chessboard::{setup_chessboard_tiled_with_dominoes, setup_chessboard_tiled_with_up_to_trionimoes};
+use xdd_pictures::directed_animals::{count_directed_animals_xdd, variable_number};
+use xdd_pictures::tiling_problem::{SiteIndex, TilingProblem};
 
 fn count_tiling<F: DecisionDiagramFactory<u32, NoMultiplicity>>(problem:TilingProblem<[i32;2]>,to_draw:&[u128],name:&str)  {
     let (mut factory ,solution) = problem.find_tiling_solution::<F>();
